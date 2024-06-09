@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Survey Form</title>
+    <link rel="stylesheet" href="surveryForm.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <form action="">   
+<div><label for="Name"><strong>Name</Strong><sup>*</sup></label></div>
+<span>
+<input type="text" id="firstname" name="FirstName" value="" size="25"required>
+<input type="text" id="lastname" name="LastName" value="" size="25"required>
+</span>
+<div><span class="firstname-text">First</span><span class="lastname-text">Second</span></div><br>
+<div><label for="email"><strong>Email</strong><sup>*</sup></label></div>
+<div><input type="email" id="email" name="email" value="" size="56" required></div><br>
+<div><label for="yourExperience"><strong>Your Experience</strong><sup>*</sup></label></div>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<p>Overall,how would you rate your experience with us?</p><br>
+<div><label for="howSatisfiedAreYouWith"><strong>How Satisfied Are You With</strong><sup>*</sup></label></div><br>
+<table style="width:100%" id="satisfied">
+  <tr>
+    <th></th>
+    <th>Very Unsatisfied</th>
+    <th>UnSatisfied</th>
+    <th>Neutral</th>
+    <th>Satisfied</th>
+    <th>Very Satisfied</th>
+  </tr>
+  <tr>
+    <th>Purchase</th>
+    <td><input  type="radio" id="Purchase-Very-Unsatisfied" name="Purchase-Very Unsatisfied" value=""></td>
+    <td><input  type="radio" id="Purchase-Unsatisfied" name="Purchase-Unsatisfied" value=""></td>
+    <td><input  type="radio" id="Purchase-Neutral" name="Purchase-Neutral" value=""></td>
+    <td><input  type="radio" id="Purchase-Satisfied" name="Purchase-satisfied" value=""></td>
+    <td><input  type="radio" id="Purchase-Very-Satisfied" name="Purchase-Very-Satisfied" value=""></td>
+    </tr>
+    <tr>
+    <th>Service</th>
+    <td><input type="radio" id="service-Very-Unsatisfied" name="sevice-Very Unsatisfied" value=""></td>
+    <td><input type="radio" id="service-Unsatisfied" name="sevice-Unsatisfied" value=""></td>
+    <td><input type="radio" id="service-Neutral" name="sevice-Neutral" value=""></td>
+    <td><input type="radio" id="service-Satisfied" name="sevice-satisfied" value=""></td>
+    <td><input type="radio" id="service-Very-Satisfied" name="sevice-Very-Satisfied" value=""></td>
+    </tr>
+    <tr>
+    <th>Company Overall</th>
+    <td><input type="radio" id="company-overall-Very-Unsatisfied" name="company-overall-Very Unsatisfied" value=""></td>
+    <td><input type="radio" id="company-overall-Unsatisfied" name="company-overall-Unsatisfied" value=""></td>
+    <td><input type="radio" id="company-overall-Neutral" name="company-overall-Neutral" value=""></td>
+    <td><input type="radio" id="company-overall-Satisfied" name="company-overall-satisfied" value=""></td>
+    <td><input type="radio" id="company-overall-Very-Satisfied" name="company-overall-Very-Satisfied" value=""></td>
+  </tr>
+</table><br>
+
+<div><label for="howLikelyAreYouTo"><strong>How Likely Are You To</strong><sup>*</sup></label></div><br>
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Very Unlikely</th>
+    <th>Unlikely</th>
+    <th>Neutral</th>
+    <th>likely</th>
+    <th>Very likely</th>
+  </tr>
+  <tr>
+    <th>buy-from-us-again</th>
+    <td><input type="radio" id="buy-from-us-again-very-unlikely" name="buy-from-us-again-very-unlikely" value=""></td>
+    <td><input type="radio" id="buy-from-us-again-unlikely" name="buy-from-us-again-unlikely" value=""></td>
+    <td><input type="radio" id="buy-from-us-again-neutral" name="buy-from-us-again-neutral" value=""></td>
+    <td><input type="radio" id="buy-from-us-again-likely" name="buy-from-us-again-likely" value=""></td>
+    <td><input type="radio" id="buy-from-us-again-very-likely" name="buy-from-us-again-very-likely" value=""></td>
+    </tr>
+    <tr>
+    <th>Recommend our Product to Others</th>
+    <td><input type="radio" id="recommend-our-product-to-others-very-unlikely" name="recommend-our-product-to-others-very-unlikely" value=""></td>
+    <td><input type="radio" id="recommend-our-product-to-others-unlikely" name="recommend-our-product-to-others-unlikely" value=""></td>
+    <td><input type="radio" id="recommend-our-product-to-others-neutral" name="recommend-our-product-to-others-neutral" value=""></td>
+    <td><input type="radio" id="recommend-our-product-to-others-likely" name="recommend-our-product-to-others-likely" value=""></td>
+    <td><input type="radio" id="recommend-our-product-to-others-Very-likely" name="recommend-our-product-to-others-Very-likely" value=""></td>
+    </tr>
+    <tr>
+    <th>Recommend our Company to Others</th>
+    <td><input type="radio" id="recommend-our-company-to-others-overall-Very-Unlikely" name="recommend-our-company-to-others-overall-Very-Unlikely" value=""></td>
+    <td><input type="radio" id="recommend-our-company-to-others-overall-Unlikely" name="recommend-our-company-to-others-overall-Unlikely" value=""></td>
+    <td><input type="radio" id="recommend-our-company-to-others-overall-neutral" name="recommend-our-company-to-others-overall-neutral" value=""></td>
+    <td><input type="radio" id="recommend-our-company-to-others-overall-likely" name="recommend-our-company-to-others-overall-likely" value=""></td>
+    <td><input type="radio" id="recommend-our-company-to-others-overall-Very-likely" name="recommend-our-company-to-others-overall-Very-likely" value=""></td>
+  </tr>
+</table><br>
+<div><label for="additionalCommentsOrSuggestions"><strong>Additional Comments Or Suggestions</strong></label></div></form>
+<textarea id="additionalCommentsOrSuggestions" name="additionalCommentsOrSuggestions" rows="4" cols="110" >
+</textarea> <br><br> 
+<input class="submit-button" type="submit" value="Submit" height="20px">
+</div>
+</form>
+</body>
+</html>

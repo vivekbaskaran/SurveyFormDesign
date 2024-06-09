@@ -1,0 +1,86 @@
+body{
+    width:900px;
+    padding-left: 300px ;
+    padding-right: 300px;
+}
+
+.checked {
+  color: orange;
+}
+sup{
+    color:red
+}
+#firstname,#lastname,#email{
+    line-height: 2em
+}
+
+#lastname{
+    margin-left: 22px;
+}
+.firstname-text,.lastname-text{
+    margin-right: 184px;
+    color:#9797a5;
+}
+.fa{
+    margin-right: 4px;
+    margin-top: 10px;
+}
+
+table {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+ th, td {
+            /* border: 1px solid #ddd; */
+            padding: 8px;
+            text-align: center;
+        }
+        tr:nth-child(even) th:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        tr:nth-child(even) td:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #9797a5;
+        }
+    
+        .submit-button {
+            height: 40px; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            background-color:#9797a5; 
+            color: white; 
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        
+        /* Styles for mobile devices */
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+                background-color: lightgreen;
+            }
+            .submit-button {
+                height: 40px;
+                width: 100%;
+            }
+        }
+
+        /* Styles for tablets */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            body {
+                font-size: 15px;
+                background-color: lightcoral;
+            }
+            .submit-button {
+                height: 45px;
+                width: 80%;
+            }
+        }
+
+
